@@ -12,34 +12,29 @@ class Hanamogera
   end
 
   def self.haiku
-    puts 'ハナモゲラ語自由律俳句 五七五'
-    puts word(5)
-    puts word(7)
-    puts word(5)
+    word(5) + ' / ' + word(7) + ' / ' + word(5)
   end
   def self.tanka
-    puts 'ハナモゲラ語短歌 五七五七七'
-    puts word(5)
-    puts word(7)
-    puts word(5)
-    puts word(7)
-    puts word(7)
+    word(5) + ' / ' + word(7) + ' / ' + word(5) + ' / ' + word(7) + ' / ' + word(7)
   end
   def self.choka
-    puts 'ハナモゲラ語長歌 五七五七...五七七'
+    res = ''
     cnt = rand(3...10)
     cnt.times do |n|
-      puts word(5)
-      puts word(7)
+      res += word(5)
+      res += ' / ' + word(7) + ' / '
     end
-    puts word(7)
+    res + word(7)
   end
 end
 
 
 puts '----------------------'
-Hanamogera.haiku
+puts 'ハナモゲラ語自由律俳句 五七五'
+puts Hanamogera.haiku
 puts '----------------------'
-Hanamogera.tanka
+puts 'ハナモゲラ語短歌 五七五七七'
+puts Hanamogera.tanka
 puts '----------------------'
-Hanamogera.choka
+puts 'ハナモゲラ語長歌 五七五七...五七七'
+puts Hanamogera.choka
