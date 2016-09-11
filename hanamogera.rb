@@ -12,7 +12,7 @@ class Hanamogera
   end
 
   def self.haiku
-    puts 'ハナモゲラ語 川柳五七五'
+    puts 'ハナモゲラ語自由律俳句 五七五'
     puts word(5)
     puts word(7)
     puts word(5)
