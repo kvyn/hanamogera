@@ -5,7 +5,7 @@ class Hanamogera
     res = ''
     while len > res.size do
       r = rand(0...76)
-      next if res.size == 0 && 'ぁぃぅぇぉっゃゅょゎをんー'.include?(STR[r])
+      next if res.size == 0 && 'っゃゅょゎをんー'.include?(STR[r])
       res += STR[r]
     end
     res
